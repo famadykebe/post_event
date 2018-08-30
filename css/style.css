@@ -1,0 +1,185 @@
+*
+{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+html,body
+{
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background: #d8e8e5;
+	font-size: 16px;
+}
+
+article,section,header,nav,figure
+{
+	display: block;
+}
+
+.car-block
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	width: 350px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	background: #fff;
+	overflow: hidden;
+}
+
+.car-block:hover
+{
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+}
+
+
+.car-block .card-header .card-days-and-moi
+{
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	background: #ff5151;
+	text-align: center;
+	top: 20px;
+	right: 20px;
+	border-radius: 50%;
+	padding-top: 7px;
+	color: white;
+}
+
+.car-block .card-header
+{
+	height: 230px;
+	background: #000;
+	overflow: hidden;
+	transition:height 0.3s;
+	
+}
+
+.car-block:hover .card-header
+{
+	height: 90px;
+	
+}
+
+
+
+
+.car-block .card-header .im-card-block img
+{
+	display: block;
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 0.3s, transform .3s;
+	width: 350px;
+	height: 230px;
+}
+
+
+.car-block:hover .card-header .im-card-block img
+{
+	opacity:.6;
+	transform: scale(1.2);
+}
+
+
+.car-block .card-header .card-days-and-moi span
+{
+	display: block;
+	font-weight: bold;
+
+}
+.car-block .card-header .card-days-and-moi .date-moth
+{
+	text-transform: uppercase;
+	font-size: 10px
+}
+
+.car-block .card-body
+{
+	padding: 20px;
+	margin-bottom: 15px;
+	position: relative;
+	height: 180px;
+	transition: height .3s;
+}
+
+
+.car-block:hover .card-body
+{
+	height: 330px;
+}
+
+.car-block .card-body .car-title
+{
+	font-size: 22px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+
+.car-block .card-body .car-photo-text 
+{
+	position: absolute;
+	top: -35px;
+	left: 0px;
+	background: #ff5151;
+	padding: 8px 15px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: white
+}
+
+.car-block .card-body .card-sous-title
+{
+	font-size: 19px;
+	font-weight: 400;
+	color: #ff5151;
+	padding-bottom: 10px;
+}
+
+.card-learm
+{
+	color:#666c74;
+	line-height: 27px;
+	font-size: 14px;
+	opacity: 0;
+	 position: absolute;
+	  left: 20px;
+	  right: 20px;
+	  bottom: 70px;
+	  transition:opacity .1s, transform .1s;
+	  transform:translateY(25px);
+}
+.car-block:hover .card-learm
+{
+	opacity: 1;
+	 transform:translateY(0px);
+}
+
+
+.card-footer
+{
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	color: #A3A9AB;
+	font-size: 11px;
+}
+
+.card-footer span:nth-child(2)
+{
+	padding-left: 7px;
+}
+
+.card-footer span .icon
+{
+	padding-right: 7px;
+}
+
+
+
